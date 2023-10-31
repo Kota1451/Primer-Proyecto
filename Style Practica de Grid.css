@@ -1,0 +1,48 @@
+.uno{
+    background-color: red;
+  grid-area: imagen;
+}
+
+.dos{
+    background-color: blue;
+   grid-area: titulo;
+}
+
+.tres{
+    background-color: green;
+    grid-area: info;
+}
+
+.cuatro{
+    background-color: purple;
+    grid-area: subtitulo;
+}
+
+.cinco{
+    background-color: aqua;
+    grid-area: footer;
+}
+
+.seis{
+    background-color: orangered;
+    grid-area: logo;
+}
+
+.siete{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 600px;
+    grid-template-areas: "imagen titulo titulo"
+                         "imagen info info"
+                         "imagen subtitulo subtitulo"
+                         "footer footer logo";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto; 
+    row-gap: 50px;
+    column-gap: 20px;
+
+}

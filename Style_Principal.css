@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(247, 245, 173);
+}
+
+h1 {
+    color: rgb(252, 6, 6);
+    font-size: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 15px;
+}
+
+.Productos {
+    background-color: rgb(112, 112, 112);
+    width: 180px;
+    height: 150px;
+    z-index: 10;
+    margin: 10px;
+    padding: 10px;
+    border: 5px black solid;
+}
+
+.Oferta {
+    background-color: rgb(112, 112, 112);
+    width: 180px;
+    height: 150px;
+    z-index: 10;
+    margin: 10px;
+    padding: 8px;
+    border: dotted 10px rgb(251, 255, 0) ;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.All_Productos {
+    flex-wrap: wrap;
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    align-items: flex-start;
+}
+
+#Buscar:hover {
+    background-color: rgb(170, 5, 5);
+}
+
+.Nav_Bar {
+    background-color: rgb(153, 231, 35);
+    flex-wrap: nowrap;
+    width: 1585px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+}
+
+#Buscar {
+    width: 600px;
+    height: 30px;   
+    position: relative;
+    top: 60px; 
+}
+
+p {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+/* Si de ancho es menor a 630px */
+@media (max-width : 630px) {
+    .Nav_Bar {
+        width: 630px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 35px;
+        top: 20px;
+        left: 20px;
+    }
+
+    #Buscar {
+        width: 300px;
+        position: relative;
+        right: 30px;
+    }
+
+    .All_Productos {
+        width: 590px;
+        height: 1000px;
+    }
+}
+
+/* Si de ancho es menor a 900px y mayor a 630 */
+@media (max-width : 900px) and (min-width : 630px) {
+    .Nav_Bar {
+        width: 1000px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 35px;
+        top: 20px;
+        left: 20px;
+    }
+
+    #Buscar {
+        width: 300px;
+        position: relative;
+        right: 30px;
+    }
+
+    .All_Productos {
+        width: 950px;
+        height: 1000px;
+    }
+}

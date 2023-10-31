@@ -1,0 +1,45 @@
+body {
+    background-color: yellowgreen;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 75px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    
+}
+
+label {
+    font-size: 20px;
+}
+input {
+    background-color: rgb(233, 231, 107);
+    width: 18em;
+    height: 1.7em;
+}
+
+#ingresar {
+    background-color: rgb(107, 79, 8);
+}
+
+div {
+    width: 102em;
+    height: 12em;
+    background-color: rgb(5, 94, 12);
+    position: relative;
+    bottom: 26em;
+    right: 2em;
+    z-index: -1;
+}
+
+#Contraseña {
+    position: relative;
+    top: 0.8em;
+    right: 7em;
+    left: 1em;
+    width: 2em;
+    height: 2em;
+}
